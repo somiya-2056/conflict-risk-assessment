@@ -1,18 +1,25 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-
 # Virtual environment
 .venv/
 
-# Large files
+# Large raw data files - too big for GitHub
 GEDEvent_v25_1.csv
-
-# Excel raw files
 SIPRI-Milex-data-1949-2025_v1.2.xlsx
-API_*.csv
+
+# World Bank raw files
+API_MS.MIL.XPND.CD_DS2_en_csv_v2_115546.csv
+API_NE.TRD.GNFS.ZS_DS2_en_csv_v2_115680.csv
+API_NY.GDP.MKTP.CD_DS2_en_csv_v2_126992.csv
+API_SP.POP.TOTL_DS2_en_csv_v2_127039.csv
+
+# Metadata files - not needed
 Metadata_*.csv
 
-# Temporary files
-*.log
+# Python cache
+__pycache__/
+*.pyc
+
+# Old/temp files
+p.py
+compare.py
+merge_data.py
+historical.py
