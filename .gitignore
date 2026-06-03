@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Large files
+GEDEvent_v25_1.csv
+
+# Excel raw files
+SIPRI-Milex-data-1949-2025_v1.2.xlsx
+API_*.csv
+Metadata_*.csv
+
+# Temporary files
+*.log

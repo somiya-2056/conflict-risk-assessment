@@ -1,0 +1,157 @@
+Year,Country_Pair,Military_Ratio,Nuclear_Weapons,India_Nuclear,Historical_Wars,Border_Length_km,Terrain_Difficulty,Kashmir_Tension,LAC_Tension,Cyber_Attack_Risk,Trade_Dependency,Diplomatic_Relations,Land_Attack_Risk,Naval_Attack_Risk,Compromise_Chance,Conflict_Risk_Score,Real_Event,Risk_Label
+1947,India-China,1.2,0,0,0,3488,9,0.0,1.0,0,0.0,5,2,1,70,28,Both newly independent - early neutrality,LOW
+1948,India-China,1.2,0,0,0,3488,9,0.0,1.0,0,0.0,5,2,1,70,28,Hindi-Chini bhai bhai era begins,LOW
+1949,India-China,1.2,0,0,0,3488,9,0.0,1.0,0,0.0,6,2,1,70,25,PRC founded - India first to recognize,LOW
+1950,India-China,1.2,0,0,0,3488,9,0.0,2.0,0,0.0,5,3,1,60,32,China occupies Tibet - India concerned,LOW
+1951,India-China,1.2,0,0,0,3488,9,0.0,2.0,0,0.0,5,3,1,60,33,Tibet formally annexed,LOW
+1952,India-China,1.2,0,0,0,3488,9,0.0,2.0,0,0.0,5,3,1,60,32,Panchsheel discussions begin,LOW
+1953,India-China,1.2,0,0,0,3488,9,0.0,2.0,0,0.0,6,3,1,70,28,Panchsheel - 5 principles of coexistence,LOW
+1954,India-China,1.2,0,0,0,3488,9,0.0,2.0,0,0.0,7,2,1,80,25,Panchsheel Agreement signed - peak friendship,LOW
+1955,India-China,0.9,0,0,0,3488,9,0.0,2.0,0,0.0,7,2,1,80,24,Bandung Conference - Nehru-Zhou Enlai,LOW
+1956,India-China,0.9,0,0,0,3488,9,0.0,3.0,0,0.0,6,3,1,70,32,Border disputes emerging,LOW
+1957,India-China,0.9,0,0,0,3488,9,0.0,4.0,0,0.0,5,4,1,60,40,China secretly builds road in Aksai Chin,LOW
+1958,India-China,0.9,0,0,0,3488,9,0.0,5.0,0,0.0,4,5,1,50,48,India discovers Aksai Chin road - shock,LOW
+1959,India-China,0.9,0,0,0,3488,9,0.0,7.0,0,0.0,3,7,1,40,68,Tibet uprising - Dalai Lama flees to India,MEDIUM
+1960,India-China,0.9,0,0,0,3488,9,0.0,7.0,0,0.0,3,7,1,30,70,Border talks fail completely,MEDIUM
+1961,India-China,0.9,0,0,0,3488,9,0.0,8.0,0,0.0,2,8,1,20,78,Forward Policy - India sends patrols,HIGH
+1962,India-China,0.5,0,0,1,3488,9,0.0,10.0,0,0.0,1,10,2,10,97,1962 WAR - India badly defeated,HIGH
+1963,India-China,0.5,0,0,1,3488,9,0.0,8.0,0,0.0,2,7,2,20,80,Post-war - diplomatic relations suspended,HIGH
+1964,India-China,0.5,0,0,1,3488,9,0.0,7.0,0,0.0,2,6,2,20,72,China nuclear test - India alarmed,HIGH
+1965,India-China,0.5,10,0,1,3488,9,0.0,7.0,0,0.0,2,6,2,20,70,China threatens India during 65 Pak war,MEDIUM
+1966,India-China,0.5,20,0,1,3488,9,0.0,6.0,0,0.0,2,5,2,30,65,Cultural revolution - China inward focus,MEDIUM
+1967,India-China,0.5,30,0,1,3488,9,0.0,7.0,0,0.0,2,7,2,30,68,Nathu La and Cho La border clashes,MEDIUM
+1968,India-China,0.5,40,0,1,3488,9,0.0,6.0,0,0.0,2,5,2,30,63,Cultural revolution continues,MEDIUM
+1969,India-China,0.5,50,0,1,3488,9,0.0,5.0,0,0.0,2,5,2,30,58,Relations strained,MEDIUM
+1970,India-China,0.5,60,0,1,3488,9,0.0,5.0,0,0.0,3,4,2,40,52,Slight improvement,MEDIUM
+1971,India-China,0.5,70,0,1,3488,9,0.0,6.0,0,0.0,2,5,3,30,62,China supports Pakistan in 1971 war,MEDIUM
+1972,India-China,0.5,80,0,1,3488,9,0.0,5.0,0,0.0,3,4,2,40,52,Nixon visits China - new global dynamics,MEDIUM
+1973,India-China,0.5,90,0,1,3488,9,0.0,5.0,0,0.0,3,4,2,40,50,Gradual normalization,LOW
+1974,India-China,0.5,100,0,1,3488,9,0.0,5.0,0,0.0,3,4,2,40,52,India nuclear test - China strongly protests,MEDIUM
+1975,India-China,0.45,110,8,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,46,Ambassador restored after 15 years,LOW
+1976,India-China,0.45,120,16,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,45,Normalization continues slowly,LOW
+1977,India-China,0.45,130,24,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,45,Talks,LOW
+1978,India-China,0.45,140,32,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,46,Vajpayee visits China - first senior visit,LOW
+1979,India-China,0.45,150,40,1,3488,9,0.0,5.0,0,0.0,3,5,2,40,52,Sino-Vietnamese war - India neutral,MEDIUM
+1980,India-China,0.45,160,48,1,3488,9,0.0,5.0,0,0.0,3,5,2,40,50,Border talks formally begin,LOW
+1981,India-China,0.45,170,56,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,47,Border talks round 1,LOW
+1982,India-China,0.45,180,64,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,46,Border talks round 2,LOW
+1983,India-China,0.45,190,72,1,3488,9,0.0,4.0,0,0.0,4,4,2,50,46,Border talks continue,LOW
+1984,India-China,0.45,200,80,1,3488,9,0.0,5.0,0,0.0,3,5,2,40,52,Sumdorong Chu incident,MEDIUM
+1985,India-China,0.4,210,88,1,3488,9,0.0,5.0,0,0.0,3,5,2,40,51,Continued tension,MEDIUM
+1986,India-China,0.4,220,96,1,3488,9,0.0,6.0,0,0.0,3,6,2,40,62,Sumdorong Chu standoff escalates,MEDIUM
+1987,India-China,0.4,230,104,1,3488,9,0.0,6.0,0,0.0,3,6,2,40,63,Wangdung standoff - near conflict,MEDIUM
+1988,India-China,0.4,240,112,1,3488,9,0.0,4.0,0,0.0,5,4,2,60,45,Rajiv Gandhi visits China - landmark reset,LOW
+1989,India-China,0.4,250,120,1,3488,9,0.0,4.0,0,0.0,5,4,2,60,44,Tiananmen - India stays neutral,LOW
+1990,India-China,0.4,260,128,1,3488,9,0.0,4.0,0,0.0,5,4,2,60,44,Stable bilateral ties,LOW
+1991,India-China,0.4,270,136,1,3488,9,0.0,4.0,0,0.5,5,4,2,60,43,India economic reforms - China trade begins,LOW
+1992,India-China,0.4,280,144,1,3488,9,0.0,4.0,0,1.0,5,4,2,60,43,Narasimha Rao visits China,LOW
+1993,India-China,0.4,290,152,1,3488,9,0.0,3.0,0,1.5,6,3,3,70,38,Border Peace and Tranquility Agreement,LOW
+1994,India-China,0.4,300,160,1,3488,9,0.0,3.0,0,2.0,6,3,3,70,37,CBMs implementation,LOW
+1995,India-China,0.35,310,168,1,3488,9,0.0,3.0,0,2.5,6,3,3,70,36,Stable,LOW
+1996,India-China,0.35,320,176,1,3488,9,0.0,3.0,0,3.0,6,3,3,70,36,Jiang Zemin visits India,LOW
+1997,India-China,0.35,330,184,1,3488,9,0.0,3.0,1,3.5,6,3,3,70,36,Stable - growing trade,LOW
+1998,India-China,0.35,340,192,1,3488,9,0.0,6.0,1,4.0,3,6,3,40,64,India nuclear test - China strongly opposes,MEDIUM
+1999,India-China,0.35,350,200,1,3488,9,0.0,5.0,1,4.5,4,5,3,50,53,Kargil - China stays carefully neutral,MEDIUM
+2000,India-China,0.35,360,208,1,3488,9,0.0,4.0,2,5.0,5,4,3,60,45,Trade growing - 3B USD,LOW
+2001,India-China,0.35,370,216,1,3488,9,0.0,4.0,2,5.5,5,4,3,60,44,SCO formed - new multilateral engagement,LOW
+2002,India-China,0.35,380,224,1,3488,9,0.0,4.0,2,6.0,5,4,3,60,44,Trade reaches 5B USD,LOW
+2003,India-China,0.35,390,232,1,3488,9,0.0,3.0,2,6.5,6,3,3,70,38,Vajpayee visits China - strategic partnership,LOW
+2004,India-China,0.35,400,240,1,3488,9,0.0,3.0,2,7.0,6,3,3,70,37,Trade growing fast,LOW
+2005,India-China,0.3,410,248,1,3488,9,0.0,3.0,2,7.5,6,3,4,70,36,Strategic and cooperative partnership,LOW
+2006,India-China,0.3,420,256,1,3488,9,0.0,4.0,3,8.0,5,4,4,60,45,Arunachal stapled visa controversy,LOW
+2007,India-China,0.3,430,264,1,3488,9,0.0,4.0,3,8.5,5,4,4,60,46,Border tensions increase,LOW
+2008,India-China,0.3,440,272,1,3488,9,0.0,4.0,3,9.0,5,4,4,60,46,Trade reaches 52B USD,LOW
+2009,India-China,0.3,450,280,1,3488,9,0.0,5.0,4,9.5,4,5,4,50,54,Chinese incursions increase,MEDIUM
+2010,India-China,0.3,460,288,1,3488,9,0.0,5.0,4,10.0,4,5,4,50,53,Stapled visa controversy escalates,MEDIUM
+2011,India-China,0.3,470,296,1,3488,9,0.0,5.0,4,10.5,4,5,5,50,52,Trade reaches 74B USD,MEDIUM
+2012,India-China,0.3,480,304,1,3488,9,0.0,5.0,5,11.0,4,5,5,50,52,Depsang standoff,MEDIUM
+2013,India-China,0.3,490,312,1,3488,9,0.0,6.0,5,11.5,4,6,5,50,59,Depsang + Chumar standoffs,MEDIUM
+2014,India-China,0.3,500,320,1,3488,9,0.0,5.0,5,12.0,5,5,5,60,50,Modi-Xi meet - reset attempted,LOW
+2015,India-China,0.27,510,328,1,3488,9,0.0,5.0,5,12.5,5,5,5,60,49,Stable - trade 71B USD,LOW
+2016,India-China,0.27,520,336,1,3488,9,0.0,5.0,6,13.0,4,5,5,50,53,China blocks NSG bid for India,MEDIUM
+2017,India-China,0.27,530,344,1,3488,9,0.0,7.0,6,13.5,3,7,6,40,68,DOKLAM STANDOFF - 73 days,MEDIUM
+2018,India-China,0.27,540,352,1,3488,9,0.0,4.0,6,14.0,6,4,5,60,44,Wuhan informal summit - reset,LOW
+2019,India-China,0.27,550,360,1,3488,9,0.0,5.0,7,14.5,5,5,6,50,53,Article 370 - China objects strongly,MEDIUM
+2020,India-China,0.27,560,368,1,3488,9,0.0,8.0,8,15.0,2,9,7,30,78,GALWAN CLASH - 20 Indian soldiers killed,HIGH
+2021,India-China,0.27,570,376,1,3488,9,0.0,7.0,8,15.5,3,7,7,40,68,Partial disengagement at some points,MEDIUM
+2022,India-China,0.27,580,384,1,3488,9,0.0,7.0,8,16.0,3,7,7,40,67,Tawang clash December 2022,MEDIUM
+2023,India-China,0.27,590,392,1,3488,9,0.0,6.0,8,16.5,4,6,7,50,60,Partial disengagement continues,MEDIUM
+2024,India-China,0.27,600,400,1,3488,9,0.0,5.0,8,17.0,5,5,7,60,52,Depsang-Demchok full disengagement,MEDIUM
+1947,India-Pakistan,3.0,0,0,1,3323,8,10.0,0.0,0,1.0,1,10,1,20,95,Partition + First Kashmir War,HIGH
+1948,India-Pakistan,3.0,0,0,1,3323,8,9.0,0.0,0,1.0,1,9,1,30,90,Ceasefire after First Kashmir War,HIGH
+1949,India-Pakistan,3.0,0,0,1,3323,8,8.0,0.0,0,1.0,2,7,1,40,80,Karachi Agreement on ceasefire line,HIGH
+1950,India-Pakistan,3.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,1,50,65,"Relative calm, UN Kashmir debates",MEDIUM
+1951,India-Pakistan,3.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,1,50,63,Relative calm,MEDIUM
+1952,India-Pakistan,3.0,0,0,1,3323,8,5.0,0.0,0,1.0,4,4,1,60,58,UN resolutions on Kashmir,MEDIUM
+1953,India-Pakistan,3.0,0,0,1,3323,8,5.0,0.0,0,1.0,4,4,1,60,57,Nehru-Bogra talks,MEDIUM
+1954,India-Pakistan,3.0,0,0,1,3323,8,5.0,0.0,0,1.0,4,4,1,60,56,Pakistan joins SEATO,MEDIUM
+1955,India-Pakistan,3.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,1,50,62,Pakistan joins Baghdad Pact,MEDIUM
+1956,India-Pakistan,4.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,2,50,63,Tension rising,MEDIUM
+1957,India-Pakistan,4.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,2,50,62,UN Security Council debates,MEDIUM
+1958,India-Pakistan,4.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,2,50,61,Ayub Khan military coup,MEDIUM
+1959,India-Pakistan,4.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,2,50,62,Tension,MEDIUM
+1960,India-Pakistan,4.0,0,0,1,3323,8,5.0,0.0,0,1.0,4,4,2,60,58,Indus Waters Treaty signed - de-escalation,MEDIUM
+1961,India-Pakistan,4.0,0,0,1,3323,8,5.0,0.0,0,1.0,4,4,2,60,57,Relative stability,MEDIUM
+1962,India-Pakistan,5.0,0,0,1,3323,8,6.0,0.0,0,1.0,3,5,2,50,63,India-China war - Pakistan watching,MEDIUM
+1963,India-Pakistan,5.0,0,0,1,3323,8,7.0,0.0,0,1.0,2,7,2,40,72,Pak-China boundary agreement - threat to India,HIGH
+1964,India-Pakistan,5.0,0,0,1,3323,8,7.0,0.0,0,1.0,2,7,2,30,74,Operation Gibraltar planning begins,HIGH
+1965,India-Pakistan,5.0,0,0,2,3323,8,10.0,0.0,0,1.0,1,10,3,20,96,1965 WAR - Operation Grand Slam,HIGH
+1966,India-Pakistan,5.0,0,0,2,3323,8,8.0,0.0,0,1.0,2,7,2,30,82,Tashkent Declaration post-war,HIGH
+1967,India-Pakistan,5.0,0,0,2,3323,8,7.0,0.0,0,1.0,3,6,2,40,72,Relative calm,HIGH
+1968,India-Pakistan,5.0,0,0,2,3323,8,7.0,0.0,0,1.0,3,6,2,40,71,Tension continues,HIGH
+1969,India-Pakistan,5.0,0,0,2,3323,8,7.0,0.0,0,1.0,3,6,2,40,70,Yahya Khan takes power,MEDIUM
+1970,India-Pakistan,5.5,0,0,2,3323,8,8.0,0.0,0,1.0,2,7,3,30,78,Bangladesh crisis building,HIGH
+1971,India-Pakistan,5.5,0,0,3,3323,8,10.0,0.0,0,1.0,1,10,8,10,98,1971 WAR - Bangladesh Liberation,HIGH
+1972,India-Pakistan,5.5,0,0,3,3323,8,8.0,0.0,0,1.0,2,8,4,30,82,Simla Agreement signed,HIGH
+1973,India-Pakistan,5.5,0,0,3,3323,8,7.0,0.0,0,1.0,3,6,3,40,70,Post-war normalization,MEDIUM
+1974,India-Pakistan,5.5,0,0,3,3323,8,7.0,0.0,0,1.0,3,6,3,40,71,India Pokhran-I nuclear test,HIGH
+1975,India-Pakistan,5.5,0,8,3,3323,8,6.0,0.0,0,1.0,4,5,2,50,64,Relative stability,MEDIUM
+1976,India-Pakistan,5.5,0,16,3,3323,8,6.0,0.0,0,1.0,4,5,2,50,63,Diplomatic relations restored,MEDIUM
+1977,India-Pakistan,5.5,0,24,3,3323,8,6.0,0.0,0,1.0,4,5,2,50,62,Zia ul-Haq military coup,MEDIUM
+1978,India-Pakistan,5.5,0,32,3,3323,8,6.0,0.0,0,1.0,3,5,2,40,65,Tension,MEDIUM
+1979,India-Pakistan,5.5,0,40,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,70,Soviet invasion Afghanistan - Pak frontline,MEDIUM
+1980,India-Pakistan,6.5,0,48,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,71,Cold War proxy dynamics,HIGH
+1981,India-Pakistan,6.5,0,56,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,70,Tension,MEDIUM
+1982,India-Pakistan,6.5,0,64,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,71,Tension,HIGH
+1983,India-Pakistan,6.5,0,72,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,70,Punjab insurgency starts,MEDIUM
+1984,India-Pakistan,6.5,0,80,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,78,Operation Blue Star + Siachen conflict,HIGH
+1985,India-Pakistan,6.5,0,88,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,72,SAARC formed,HIGH
+1986,India-Pakistan,6.5,0,96,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,78,Operation Brasstacks crisis,HIGH
+1987,India-Pakistan,6.5,0,104,3,3323,8,9.0,0.0,0,1.0,1,8,2,20,85,Brasstacks near-war standoff,HIGH
+1988,India-Pakistan,6.5,7,112,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,70,Benazir Bhutto - Rajiv Gandhi talks,MEDIUM
+1989,India-Pakistan,6.5,14,120,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,78,Kashmir insurgency begins,HIGH
+1990,India-Pakistan,7.5,21,128,3,3323,8,9.0,0.0,0,1.0,1,8,2,20,86,Near-nuclear war scare,HIGH
+1991,India-Pakistan,7.5,28,136,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,79,Kashmir insurgency peak,HIGH
+1992,India-Pakistan,7.5,35,144,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,80,Cross-border terrorism high,HIGH
+1993,India-Pakistan,7.5,42,152,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,79,Hazratbal siege,HIGH
+1994,India-Pakistan,7.5,49,160,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,79,Continued insurgency,HIGH
+1995,India-Pakistan,7.5,56,168,3,3323,8,8.0,0.0,0,1.0,2,7,2,30,78,Al-Faran kidnappings,HIGH
+1996,India-Pakistan,7.5,63,176,3,3323,8,7.0,0.0,0,1.0,3,6,2,40,72,Slight improvement,HIGH
+1997,India-Pakistan,7.5,70,184,3,3323,8,7.0,0.0,1,1.0,3,6,2,40,70,Composite dialogue starts,MEDIUM
+1998,India-Pakistan,7.5,77,192,3,3323,8,9.0,0.0,1,1.0,1,8,3,20,87,Nuclear tests both sides - Pokhran II + Chagai,HIGH
+1999,India-Pakistan,7.5,84,200,4,3323,8,10.0,0.0,1,1.0,1,10,3,20,96,KARGIL WAR,HIGH
+2000,India-Pakistan,8.5,91,208,4,3323,8,8.0,0.0,2,2.0,2,7,2,30,80,Post-Kargil tension,HIGH
+2001,India-Pakistan,8.5,98,216,4,3323,8,9.0,0.0,2,2.0,1,8,2,20,86,Parliament attack - Operation Parakram begins,HIGH
+2002,India-Pakistan,8.5,105,224,4,3323,8,9.0,0.0,2,2.0,1,9,2,20,88,Operation Parakram - million troops mobilized,HIGH
+2003,India-Pakistan,8.5,112,232,4,3323,8,7.0,0.0,2,2.0,3,6,2,40,70,LOC Ceasefire November 2003,MEDIUM
+2004,India-Pakistan,8.5,119,240,4,3323,8,6.0,0.0,2,2.0,5,5,2,50,62,Composite dialogue resumes,MEDIUM
+2005,India-Pakistan,8.5,126,248,4,3323,8,6.0,0.0,3,2.0,4,5,2,50,63,Bus diplomacy Srinagar-Muzaffarabad,MEDIUM
+2006,India-Pakistan,8.5,133,256,4,3323,8,7.0,0.0,3,2.0,3,6,2,40,71,Mumbai train blasts - 7/11,HIGH
+2007,India-Pakistan,8.5,140,264,4,3323,8,7.0,0.0,3,2.0,3,6,2,40,70,Samjhauta Express blast,MEDIUM
+2008,India-Pakistan,8.5,147,272,4,3323,8,9.0,0.0,4,2.0,1,8,2,20,87,26/11 Mumbai attacks,HIGH
+2009,India-Pakistan,8.5,154,280,4,3323,8,8.0,0.0,4,2.0,2,7,2,30,79,Post-26/11 tension,HIGH
+2010,India-Pakistan,9.0,161,288,4,3323,8,7.0,0.0,4,1.5,3,6,2,40,71,Talks resume,HIGH
+2011,India-Pakistan,9.0,168,296,4,3323,8,7.0,0.0,5,1.5,3,6,2,40,70,MFN status discussion,MEDIUM
+2012,India-Pakistan,9.0,175,304,4,3323,8,7.0,0.0,5,1.5,3,6,2,40,69,Trade talks,MEDIUM
+2013,India-Pakistan,9.0,182,312,4,3323,8,8.0,0.0,5,1.5,2,7,2,30,77,LOC violations increase significantly,HIGH
+2014,India-Pakistan,9.0,189,320,4,3323,8,7.0,0.0,6,1.5,3,6,2,40,70,Modi-Sharif Oath ceremony diplomacy,MEDIUM
+2015,India-Pakistan,9.0,196,328,4,3323,8,7.0,0.0,6,1.5,3,6,2,40,69,Ufa meeting,MEDIUM
+2016,India-Pakistan,9.0,203,336,4,3323,8,9.0,0.0,7,1.5,1,8,2,20,87,URI attack + Surgical Strike,HIGH
+2017,India-Pakistan,9.0,210,344,4,3323,8,8.0,0.0,7,1.5,2,7,2,30,79,Tension continues post-Uri,HIGH
+2018,India-Pakistan,9.0,217,352,4,3323,8,7.0,0.0,7,1.5,3,6,2,40,70,Kartarpur corridor talks,MEDIUM
+2019,India-Pakistan,9.0,224,360,4,3323,8,9.0,0.0,8,1.5,1,8,2,20,88,Pulwama + Balakot airstrike + Article 370,HIGH
+2020,India-Pakistan,9.5,231,368,4,3323,8,8.0,0.0,8,1.5,2,7,2,30,80,COVID - reduced cross-border activity,HIGH
+2021,India-Pakistan,9.5,238,376,4,3323,8,6.0,0.0,8,1.5,3,5,2,50,65,LOC Ceasefire February 2021,MEDIUM
+2022,India-Pakistan,9.5,245,384,4,3323,8,7.0,0.0,8,1.5,3,6,2,40,71,Tension resumes,HIGH
+2023,India-Pakistan,9.5,252,392,4,3323,8,7.0,0.0,8,1.5,3,6,2,40,72,Continued tension,HIGH
+2024,India-Pakistan,9.5,259,400,4,3323,8,7.0,0.0,9,1.5,3,6,2,40,71,India elections - Pakistan political crisis,HIGH
