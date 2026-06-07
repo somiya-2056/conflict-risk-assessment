@@ -96,53 +96,56 @@ st.markdown("""
 
 @st.cache_resource
 def train_models():
-    np.random.seed(42)
-    X_hist = np.array([
-        [0.6,0.7,0.9,0.0,0.5,0.1,0.2,0.8,0.1,0.3],
-        [0.5,0.5,0.8,0.0,0.4,0.1,0.3,0.7,0.1,0.4],
-        [0.7,0.6,0.9,0.0,0.6,0.1,0.1,0.9,0.1,0.2],
-        [0.6,0.5,0.8,0.5,0.4,0.2,0.3,0.7,0.1,0.5],
-        [0.7,0.4,0.7,0.6,0.3,0.4,0.4,0.6,0.2,0.6],
-        [0.8,0.3,0.7,0.7,0.3,0.5,0.4,0.7,0.2,0.7],
-        [0.8,0.2,0.5,0.8,0.2,0.3,0.6,0.3,0.3,0.8],
-        [0.9,0.2,0.4,0.8,0.2,0.3,0.7,0.2,0.4,0.9],
-        [0.5,0.8,0.9,0.3,0.6,0.6,0.1,0.9,0.1,0.2],
-        [0.6,0.6,0.7,0.5,0.4,0.5,0.3,0.6,0.2,0.5],
-        [0.7,0.3,0.4,0.7,0.2,0.3,0.6,0.2,0.4,0.7],
-        [0.8,0.2,0.3,0.8,0.1,0.2,0.8,0.1,0.5,0.9],
-        [0.4,0.6,0.8,0.0,0.3,0.1,0.2,0.8,0.2,0.3],
-        [0.5,0.4,0.7,0.5,0.3,0.3,0.4,0.5,0.3,0.5],
-        [0.6,0.3,0.6,0.6,0.3,0.4,0.5,0.4,0.4,0.6],
-        [0.6,0.4,0.7,0.6,0.4,0.6,0.3,0.8,0.3,0.5],
-        [0.7,0.3,0.6,0.7,0.3,0.5,0.4,0.4,0.4,0.7],
-        [0.8,0.2,0.5,0.7,0.2,0.4,0.5,0.3,0.5,0.8],
-        [0.4,0.7,0.9,0.4,0.6,0.8,0.1,0.9,0.2,0.2],
-        [0.5,0.5,0.7,0.5,0.4,0.6,0.3,0.6,0.3,0.5],
-        [0.7,0.3,0.5,0.6,0.3,0.4,0.5,0.3,0.5,0.7],
-        [0.9,0.2,0.3,0.7,0.2,0.3,0.7,0.2,0.6,0.9],
-        [0.3,0.9,1.0,0.2,0.7,0.7,0.1,1.0,0.1,0.1],
-        [0.4,0.8,0.9,0.3,0.6,0.7,0.2,0.9,0.1,0.2],
-        [0.5,0.7,0.8,0.4,0.5,0.6,0.3,0.7,0.2,0.4],
-        [0.6,0.5,0.6,0.6,0.3,0.4,0.5,0.5,0.3,0.6],
-        [0.7,0.3,0.4,0.7,0.2,0.3,0.6,0.3,0.5,0.8],
-        [0.8,0.2,0.3,0.8,0.1,0.2,0.7,0.2,0.6,0.9],
-        [0.9,0.1,0.2,0.9,0.1,0.1,0.9,0.1,0.7,1.0],
-        [0.3,1.0,1.0,0.1,0.9,0.9,0.0,1.0,0.0,0.0],
-    ])
-    y_hist = np.array([2,2,2,1,1,1,0,0,2,1,0,0,
-                       2,1,1,1,0,0,2,1,0,0,
-                       2,2,1,1,0,0,0,2])
+    # Load from CSV — no hardcoding!
+    df = pd.read_csv(r"D:\drdo\historical_dataset_1947_2024.csv")
+    
+    from sklearn.utils import resample
+    from sklearn.model_selection import train_test_split
+    
+    FEATURES = [
+        'Military_Ratio', 'Nuclear_Weapons', 'Historical_Wars',
+        'Kashmir_Tension', 'LAC_Tension', 'Cyber_Attack_Risk',
+        'Trade_Dependency', 'Diplomatic_Relations',
+        'Land_Attack_Risk', 'Naval_Attack_Risk'
+    ]
+    
+    def risk_cat(score):
+        if score <= 50: return 0
+        elif score <= 70: return 1
+        else: return 2
+    
+    df['Risk_Category'] = df['Conflict_Risk_Score'].apply(risk_cat)
+    
+    # Balance classes
+    df_high = df[df['Risk_Category']==2]
+    df_med  = df[df['Risk_Category']==1]
+    df_low  = df[df['Risk_Category']==0]
+    target  = max(len(df_high), len(df_med), len(df_low))
+    
+    df_bal = pd.concat([
+        resample(df_high, replace=True, n_samples=target, random_state=42),
+        resample(df_med,  replace=True, n_samples=target, random_state=42),
+        resample(df_low,  replace=True, n_samples=target, random_state=42),
+    ]).reset_index(drop=True)
+    
+    X = df_bal[FEATURES]
+    y = df_bal['Risk_Category']
+    
     scaler = StandardScaler()
-    X_sc = scaler.fit_transform(X_hist)
-    rf = RandomForestClassifier(n_estimators=200, max_depth=6, random_state=42, class_weight='balanced')
-    gb = GradientBoostingClassifier(n_estimators=150, learning_rate=0.08, max_depth=4, random_state=42)
-    rf.fit(X_sc, y_hist)
-    gb.fit(X_sc, y_hist)
-    rf_cv = cross_val_score(rf, X_sc, y_hist, cv=5).mean()
-    gb_cv = cross_val_score(gb, X_sc, y_hist, cv=5).mean()
-    return rf, gb, scaler, rf_cv, gb_cv
+    X_sc = scaler.fit_transform(X)
+    
+    rf = RandomForestClassifier(n_estimators=200, max_depth=5, min_samples_leaf=3,
+                                 class_weight='balanced', random_state=42)
+    gb = GradientBoostingClassifier(n_estimators=150, learning_rate=0.08,
+                                     max_depth=4, random_state=42)
+    rf.fit(X_sc, y)
+    gb.fit(X_sc, y)
+    
+    rf_cv = cross_val_score(rf, X_sc, y, cv=5).mean()
+    gb_cv = cross_val_score(gb, X_sc, y, cv=5).mean()
+    return rf, gb, scaler, rf_cv, gb_cv, FEATURES
 
-rf_model, gb_model, scaler, rf_acc, gb_acc = train_models()
+rf_model, gb_model, scaler, rf_acc, gb_acc, FEATURES = train_models()
 
 def predict_war(features):
     x = np.array(features).reshape(1,-1)
@@ -234,48 +237,38 @@ compromise = round((dip_relations*6 + trade_dep*4 + (1-terr_dispute)*3 + (1-rece
 compromise = min(max(compromise, 5), 80)
 
 # ── INDIA HISTORICAL GRAPHS ──
-st.markdown('<div class="section-header">📊 INDIA — HISTORICAL STRATEGIC DATA (1949–2025)</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">📊 INDIA — HISTORICAL STRATEGIC DATA (1947–2025)</div>', unsafe_allow_html=True)
 
-# Full SIPRI data 1949-2025
-mil_years = list(range(1947, 2026))
+# ── LOAD DATA FROM CSV ──
+@st.cache_data
+def load_data():
+    # Military data from SIPRI CSV
+    sipri_df = pd.read_csv(r"D:\drdo\sipri_full.csv")
+    sipri_df = sipri_df.replace('...', None)
+    
+    # GDP + Trade from historical dataset
+    hist_df = pd.read_csv(r"D:\drdo\historical_dataset_1947_2024.csv")
+    
+    return sipri_df, hist_df
+
+sipri_df, hist_df = load_data()
+
+# Military data
+mil_years = sipri_df['Year'].tolist()
 mil_data = {
-    'India': [
-        None,None,None,None,None,None,None,None,None,518,655,688,
-        730,895,1095,1149,1096,1198,1318,1547,1776,1905,
-        1905,2100,2415,2634,2951,3076,3544,4000,4200,4500,
-        4800,5200,5600,6100,6800,7200,7500,8100,8900,9800,
-        10500,11200,12300,13100,14200,15300,16500,17800,19200,20800,
-        22500,24000,25500,27000,28500,30000,32000,34000,36000,38000,
-        40000,43000,46000,49000,48000,48000,50000,51000,55000,64000,
-        66000,71000,73000,76000,80000,82000,85000
-    ],
-    'Pakistan': [
-        None,None,None,250,287,251,217,204,169,153,165,178,
-        195,210,230,250,275,300,330,365,400,435,
-        470,510,550,600,650,700,750,800,870,940,
-        1020,1100,1200,1300,1400,1520,1650,1800,1950,2100,
-        2300,2500,2700,2900,3100,3400,3700,4000,4200,4500,
-        4800,5000,5500,6000,6200,6800,7000,7200,8000,9000,
-        9500,10000,9800,11000,10300,8600,10300,None,None,None,
-        None,None,None,None,None,None,None
-    ],
-    'China': [
-        None,None,None,None,None,None,None,None,None,None,None,None,
-        None,None,None,None,None,None,None,None,None,None,
-        None,None,None,None,None,None,None,None,None,None,
-        None,None,None,None,None,None,None,None,None,None,
-        None,None,None,None,None,None,None,None,None,None,
-        None,None,None,None,None,None,14000,17000,20000,24000,
-        28000,34000,42000,44000,63000,79000,97000,106000,125000,145000,
-        164000,183000,197000,199000,210000,232000,240000,258000,259000,
-        286000,292000,296000,311000,325000,336000
-    ]
+    'India':    pd.to_numeric(sipri_df['India'],    errors='coerce').tolist(),
+    'Pakistan': pd.to_numeric(sipri_df['Pakistan'], errors='coerce').tolist(),
+    'China':    pd.to_numeric(sipri_df['China'],    errors='coerce').tolist(),
 }
-gdp_years = list(range(2005, 2024))
+
+# GDP data from World Bank (via historical dataset proxy)
+# GDP from World Bank CSV
+gdp_df = pd.read_csv(r"D:\drdo\gdp_data.csv")
+gdp_years = gdp_df['Year'].astype(int).tolist()
 gdp_data = {
-    'India':   [0.82,0.92,1.21,1.19,1.34,1.67,1.82,1.83,1.86,2.04,2.10,2.29,2.65,2.71,2.83,2.67,3.18,3.39,3.64],
-    'Pakistan':[0.11,0.14,0.15,0.17,0.17,0.18,0.21,0.22,0.23,0.23,0.27,0.28,0.30,0.31,0.31,0.26,0.35,0.37,0.34],
-    'China':   [2.26,2.75,3.55,4.60,5.10,6.09,7.55,8.53,9.57,10.48,11.06,11.20,12.24,13.61,14.34,14.73,17.73,17.96,18.27],
+    'India':    gdp_df['India'].tolist(),
+    'Pakistan': gdp_df['Pakistan'].tolist(),
+    'China':    gdp_df['China'].tolist(),
 }
 
 hg1, hg2, hg3 = st.columns(3)
