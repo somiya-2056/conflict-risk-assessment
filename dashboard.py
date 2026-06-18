@@ -182,7 +182,7 @@ compromise = round((dip_relations*4 + trade_dep*3 +
 compromise = min(max(compromise, 5), 80)
 
 # ── INDIA HISTORICAL GRAPHS ──
-st.markdown('<div class="section-header">📊 INDIA — HISTORICAL STRATEGIC DATA (1947–2025)</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">📊 INDIA — HISTORICAL STRATEGIC DATA </div>', unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
