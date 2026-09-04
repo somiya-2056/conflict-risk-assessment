@@ -200,7 +200,7 @@ mil_data = {
     'China':    pd.to_numeric(sipri_df['China'],    errors='coerce').tolist(),
 }
 
-gdp_df = pd.read_csv(r"D:\drdo\gdp_data.csv")
+gdp_df = pd.read_csv("gdp_data.csv")
 gdp_years = gdp_df['Year'].astype(int).tolist()
 gdp_data = {
     'India':    gdp_df['India'].tolist(),
