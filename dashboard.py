@@ -45,7 +45,7 @@ FEATURES = [
 
 @st.cache_resource
 def train_models():
-    df = pd.read_csv(r"drdo\historical_dataset_1947_2024.csv")
+    df = pd.read_csv("historical_dataset_1947_2024.csv")
     from sklearn.utils import resample
 
     def risk_cat(score):
