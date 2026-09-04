@@ -186,9 +186,9 @@ st.markdown('<div class="section-header">📊 INDIA — HISTORICAL STRATEGIC DAT
 
 @st.cache_data
 def load_data():
-    sipri_df = pd.read_csv(r"D:\drdo\sipri_full.csv")
+   sipri_df = pd.read_csv("sipri_full.csv")
     sipri_df = sipri_df.replace('...', None)
-    hist_df = pd.read_csv(r"D:\drdo\historical_dataset_1947_2024.csv")
+    hist_df = pd.read_csv("historical_dataset_1947_2024.csv")
     return sipri_df, hist_df
 
 sipri_df, hist_df = load_data()
